@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - DropBook: PDF to Audiobook</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --code-bg: #f3f4f6;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #374151;
+        --code-bg: #1f2937;
+        --link: #60a5fa;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      margin: 0;
+      padding: 2rem 1.25rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .meta p {
+      margin: 0.35rem 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+
+    <div class="meta">
+      <p><strong>App Name:</strong> DropBook: PDF to Audiobook (Package ID: <code>app.dropbook.reader</code>)</p>
+      <p><strong>Developer:</strong> Kadi Narmamatov (DropBook)</p>
+      <p><strong>Contact Email:</strong> <a href="mailto:kadirpili@gmail.com">kadirpili@gmail.com</a></p>
+      <p><strong>Effective Date:</strong> October 27, 2026</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>
+      DropBook ("we", "our", or "the App") is a minimalist audiobook player for Android that converts user-selected document files (.PDF, .EPUB, .TXT) into spoken audio. DropBook does not require user registration, login accounts, names, emails, or phone numbers.
+    </p>
+
+    <h2>2. Information We Access and Collect</h2>
+
+    <h3>A. User-Selected Document Files (Local Processing &amp; Transient TTS Synthesis)</h3>
+    <ul>
+      <li><strong>How it works:</strong> When you select a <code>.pdf</code>, <code>.epub</code>, or <code>.txt</code> file using the Android system file picker, the file is read and cleaned locally on your device.</li>
+      <li><strong>Text-to-Speech (TTS) Processing:</strong> Extracted text paragraphs are transmitted securely over HTTPS to cloud Text-to-Speech services (Google Cloud Vertex AI / Gemini API and our dedicated TTS synthesis servers) solely to generate spoken audio streams for playback. We do not permanently store your personal documents or link book contents to your personal identity.</li>
+    </ul>
+
+    <h3>B. Device Identifiers &amp; Advertising (Google AdMob)</h3>
+    <p>
+      DropBook is offered for free and supported by rewarded video advertisements provided by <strong>Google AdMob</strong> (<code>com.google.android.gms:play-services-ads</code>).
+    </p>
+    <ul>
+      <li><strong>Data Collected by AdMob:</strong> Google AdMob automatically accesses and collects your device's <strong>Google Advertising ID (<code>AD_ID</code>)</strong>, approximate location (derived from IP address), device diagnostics, and ad interaction events (such as video ad views and reward completions).</li>
+      <li><strong>Purpose:</strong> This data is used for serving rewarded ads, measuring ad performance (analytics), and preventing ad fraud.</li>
+      <li><strong>Third-Party Sharing:</strong> Data collected by the Google Mobile Ads SDK is processed by Google in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms</a>.</li>
+    </ul>
+
+    <h3>C. Anonymous App Functionality &amp; Security (Block Store &amp; App Check)</h3>
+    <ul>
+      <li><strong>Google Play Services Block Store:</strong> DropBook stores an encrypted, anonymous listening-time token on your device via Google Block Store solely to preserve your remaining free listening minutes across app reinstalls.</li>
+      <li><strong>Firebase App Check (Google Play Integrity):</strong> DropBook uses hardware attestation tokens via Google Play Integrity to verify that audio synthesis requests originate from an authentic Android device and an unmodified version of the App, preventing automated bot abuse.</li>
+    </ul>
+
+    <h2>3. Data Security</h2>
+    <p>
+      All network communications between the App and cloud TTS/advertising endpoints are encrypted in transit using industry-standard HTTPS/TLS protocols.
+    </p>
+
+    <h2>4. Data Retention and Deletion Policy</h2>
+    <ul>
+      <li><strong>No User Accounts:</strong> Because DropBook does not create user accounts or collect personal profile data (such as emails or names), there is no personal account record to delete.</li>
+      <li><strong>Clearing Local Data:</strong> All locally cached audio files (<code>.wav</code> / <code>.m4a</code>) and reading progress are stored inside the App's local sandbox on your device. You can delete this data at any time by going to <strong>Android Settings &rarr; Apps &rarr; DropBook &rarr; Storage &rarr; Clear Storage / Clear Cache</strong>, or by uninstalling the App.</li>
+      <li><strong>Resetting Your Advertising ID:</strong> You can reset or delete your Google Advertising ID at any time by going to <strong>Android Settings &rarr; Google &rarr; All services &rarr; Ads &rarr; Reset advertising ID / Delete advertising ID</strong>.</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>
+      DropBook is intended for general audiences aged 13 and older and does not knowingly collect personal information from children under the age of 13.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or our data practices, please contact us at:<br />
+      <strong>Email:</strong> <a href="mailto:kadirpili@gmail.com">kadirpili@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
